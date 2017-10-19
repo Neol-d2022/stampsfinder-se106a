@@ -77,8 +77,11 @@ describe('S.findStamp', function () {
     it('should be [7, 7, 7, 7, 1]', function (){
         assert.deepEqual(S.findStamp([1, 3, 5, 6, 7], 29), [7, 7, 7, 7, 1]);
     });
-    it('should be [7, 7, 7, 7, 1]永遠大於的情形(無相等解) 迴圈中斷測試', function (){
-        assert.deepEqual(S.findStamp([2, 3, 5, 6, 7], 29), [7, 7, 7, 7, 2]);
+    it('should be [6, 6, 6, 6, 5]', function (){
+        assert.deepEqual(S.findStamp([2, 3, 5, 6, 7], 29), [6, 6, 6, 6, 5]);
+    });
+    it('should be [2] 永遠大於的情形(無相等解) 迴圈中斷測試', function (){
+        assert.deepEqual(S.findStamp([2, 3, 5, 6, 7], 1), [2]);
     });
 });
 
