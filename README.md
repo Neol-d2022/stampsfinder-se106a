@@ -1,7 +1,7 @@
 # stampsfinder-se106a
 
 ## **Build Status**
-- [![Build Status](https://travis-ci.org/Neol-d2022/stampsfinder-se106a.svg?branch=develop-travis)](https://travis-ci.org/Neol-d2022/stampsfinder-se106a)
+- [![Build Status](https://travis-ci.org/Neol-d2022/stampsfinder-se106a.svg?branch=master)](https://travis-ci.org/Neol-d2022/stampsfinder-se106a)
 
 ## `S.sumUpStamps`
 - 給定一組郵票，以及使用過的郵票，計算出總和
