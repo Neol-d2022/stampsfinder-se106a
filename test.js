@@ -54,8 +54,8 @@ describe('S.nextIAstepDown', function () {
     it('should be [4, 4, 4, 4, 0]', function () {
         assert.deepEqual(S.nextIAstepDown([1, 3, 5, 6, 7], [4, 4, 4, 4, 1], 29), [4, 4, 4, 4, 0]);
     });
-    it('should be [4, 4, 4, 4, 0]索引值低於零情形的 迴圈中斷測試', function () {
-        assert.deepEqual(S.nextIAstepDown([1, 3, 5, 6, 7], [4, 4, 4, 4, 0], 29), [4, 4, 4, 4, 0]);
+    it('should be [4, 4, 4, 4]', function () {
+        assert.deepEqual(S.nextIAstepDown([1, 3, 5, 6, 7], [4, 4, 4, 4, 0], 29), [4, 4, 4, 4]);
     });
     it('should be [3]', function () {
         assert.deepEqual(S.nextIAstepDown([3, 4, 5, 6, 7], [4], 2), [3]);
@@ -69,8 +69,8 @@ describe('S.nextIAstepDown', function () {
     it('should be [0]', function () {
         assert.deepEqual(S.nextIAstepDown([3, 4, 5, 6, 7], [1], 2), [0]);
     });
-    it('should be [0]索引值低於零情形的 迴圈中斷測試', function () {
-        assert.deepEqual(S.nextIAstepDown([3, 4, 5, 6, 7], [0], 2), [0]);
+    it('should be []', function () {
+        assert.deepEqual(S.nextIAstepDown([3, 4, 5, 6, 7], [0], 2), []);
     });
 });
 describe('S.findStamp', function () {
@@ -79,9 +79,6 @@ describe('S.findStamp', function () {
     });
     it('should be [7, 7, 7, 6, 2]', function (){
         assert.deepEqual(S.findStamp([2, 3, 5, 6, 7], 29), [7, 7, 7, 6, 2]);
-    });
-    it('should be [2] 永遠大於的情形(無相等解) 迴圈中斷測試', function (){
-        assert.deepEqual(S.findStamp([2, 3, 5, 6, 7], 1), [2]);
     });
 });
 
