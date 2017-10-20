@@ -1,0 +1,17 @@
+{
+    "name": "stampsfinder-se106a",
+    "version": "0.0.1",
+    "description": "stampsfinder-se106a",
+    "main": "stamp.js",
+    "dependencies": {},
+    "devDependencies": {
+        "mocha": "^4"
+    },
+    "scripts": {
+        "test": "mocha"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Neol-d2022/stampsfinder-se106a.git"
+    }
+}
