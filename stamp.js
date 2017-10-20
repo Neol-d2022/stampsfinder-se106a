@@ -45,6 +45,11 @@ S.findStamp = function (stamps, desired) {
         [...temp] = S.nextIAstepDown(price, index, target);
         if (index[index.length - 1] == temp[temp.length - 1]) break;
         [...index] = temp;
+        let str = '';
+        index.forEach(function (element) {
+            str += price[element] + ' ';
+        });
+        console.log(str);
     }
     for (let i = 0; i < index.length; i++) {
         result.push(price[index[i]]);
